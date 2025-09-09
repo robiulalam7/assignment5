@@ -9,7 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body>
+<body class="bg-[#F5FFF6]">
     <!-- nav section -->
     <nav class="nav-parent mx-auto w-full p-10 flex justify-between">
         <div class="left-div flex items-center gap-2 ">
@@ -49,25 +49,51 @@
             Republic of Bangladesh</p>
     </header>
     <!-- card section -->
-    <section class="w-11/12 mx-auto py-10 grid grid-cols-12 gap-8 ">
-        <div class="card-parent bg-red-500 col-span-9 grid grid-cols-3 gap-4 p-4">
-            <div class="card-child bg-white border-2 border-blue-900 max-w-80 rounded-xl p-3 shadow-md">
-                <div class="flex justify-between mb-3">
-                    <img src="assets/emergency.png" alt="">
+    <section class="w-11/12 mx-auto py-5 grid grid-cols-12 gap-8  ">
+        <div class="card-parent col-span-9 grid grid-cols-3 gap-4 p-5">
+            <!-- card emergency -->
+            <div class="card-child bg-white max-w-80 rounded-xl p-3 shadow-md">
+                <div class="flex justify-between mb-0">
+                    <img src="assets/emergency.png" class="h-8 w-8 bg-[#FFE3E2] p-1 rounded-md" alt="">
                     <button>
                         <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-                        <path
-                            d="M305 151.1L320 171.8L335 151.1C360 116.5 400.2 96 442.9 96C516.4 96 576 155.6 576 229.1L576 231.7C576 343.9 436.1 474.2 363.1 529.9C350.7 539.3 335.5 544 320 544C304.5 544 289.2 539.4 276.9 529.9C203.9 474.2 64 343.9 64 231.7L64 229.1C64 155.6 123.6 96 197.1 96C239.8 96 280 116.5 305 151.1z"/>
-                    </svg>
+                            <path
+                                d="M305 151.1L320 171.8L335 151.1C360 116.5 400.2 96 442.9 96C516.4 96 576 155.6 576 229.1L576 231.7C576 343.9 436.1 474.2 363.1 529.9C350.7 539.3 335.5 544 320 544C304.5 544 289.2 539.4 276.9 529.9C203.9 474.2 64 343.9 64 231.7L64 229.1C64 155.6 123.6 96 197.1 96C239.8 96 280 116.5 305 151.1z" />
+                        </svg>
                     </button>
                 </div>
                 <div class="mt-2 mb-5">
-                    <h2 class="font-bold">জাতীয় জরুরি সেবা</h2>
-                    <p class="font-light text-gray-400 text-[10px]">National Emergency</p>
+                    <h2 class="font-bold mb-0">জাতীয় জরুরি সেবা</h2>
+                    <p class="font-light text-gray-400 text-[10px] mb-0">National Emergency</p>
+                </div>
+                <div class="mb-3">
+                    <h1 class="font-bold text-[20px] mb-0">999</h1>
+                    <p class="bg-slate-200 rounded-2xl px-3 py-1 inline-block mb-0 text-gray-500">সার্বজনীন</p>
+                </div>
+                <div class="flex gap-4 mb-0">
+                    <button class="bg-gray-200  rounded-xl p-1 w-full ">Copy</button>
+                    <button class="bg-green-500  rounded-xl p-1 w-full">Call</button>
+                </div>
+
+            </div>
+            <!-- card police -->
+            <div class="card-child bg-white max-w-80 rounded-xl p-3 shadow-md">
+                <div class="flex justify-between ">
+                    <img src="assets/police.png" class="h-8 w-8 rounded-md bg-[#FFE3E2] p-1" alt="">
+                    <button>
+                        <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                            <path
+                                d="M305 151.1L320 171.8L335 151.1C360 116.5 400.2 96 442.9 96C516.4 96 576 155.6 576 229.1L576 231.7C576 343.9 436.1 474.2 363.1 529.9C350.7 539.3 335.5 544 320 544C304.5 544 289.2 539.4 276.9 529.9C203.9 474.2 64 343.9 64 231.7L64 229.1C64 155.6 123.6 96 197.1 96C239.8 96 280 116.5 305 151.1z" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="mt-2 mb-5">
+                    <h2 class="font-bold">পুলিশ</h2>
+                    <p class="font-light text-gray-400 text-[10px]">Police</p>
                 </div>
                 <div class="mb-3">
                     <h1 class="font-bold text-[20px]">999</h1>
-                    <p class="bg-slate-200 rounded-2xl px-3 py-1 inline-block ">সার্বজনীন</p>
+                    <p class="bg-slate-200 rounded-2xl px-3 py-1 inline-block text-gray-500">পুলিশ</p>
                 </div>
                 <div class="flex gap-4">
                     <button class="bg-gray-200 px-7 rounded-xl p-1 w-full">Copy</button>
@@ -75,24 +101,24 @@
                 </div>
 
             </div>
-
-            <div class="card-child bg-white border-2 border-blue-900 max-w-80 rounded-xl p-3 shadow-md">
+            <!-- card fire service -->
+            <div class="card-child bg-white max-w-80 rounded-xl p-3 shadow-md">
                 <div class="flex justify-between mb-3">
-                    <img src="assets/emergency.png" alt="">
+                    <img src="assets/fire-service.png" class="h-8 w-8 rounded-md bg-[#FFE3E2] p-1" alt="">
                     <button>
                         <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-                        <path
-                            d="M305 151.1L320 171.8L335 151.1C360 116.5 400.2 96 442.9 96C516.4 96 576 155.6 576 229.1L576 231.7C576 343.9 436.1 474.2 363.1 529.9C350.7 539.3 335.5 544 320 544C304.5 544 289.2 539.4 276.9 529.9C203.9 474.2 64 343.9 64 231.7L64 229.1C64 155.6 123.6 96 197.1 96C239.8 96 280 116.5 305 151.1z"/>
-                    </svg>
+                            <path
+                                d="M305 151.1L320 171.8L335 151.1C360 116.5 400.2 96 442.9 96C516.4 96 576 155.6 576 229.1L576 231.7C576 343.9 436.1 474.2 363.1 529.9C350.7 539.3 335.5 544 320 544C304.5 544 289.2 539.4 276.9 529.9C203.9 474.2 64 343.9 64 231.7L64 229.1C64 155.6 123.6 96 197.1 96C239.8 96 280 116.5 305 151.1z" />
+                        </svg>
                     </button>
                 </div>
                 <div class="mt-2 mb-5">
-                    <h2 class="font-bold">জাতীয় জরুরি সেবা</h2>
-                    <p class="font-light text-gray-400 text-[10px]">National Emergency</p>
+                    <h2 class="font-bold">ফায়ার সার্ভিস</h2>
+                    <p class="font-light text-gray-400 text-[10px]">Fire Service</p>
                 </div>
                 <div class="mb-3">
                     <h1 class="font-bold text-[20px]">999</h1>
-                    <p class="bg-slate-200 rounded-2xl px-3 py-1 inline-block ">সার্বজনীন</p>
+                    <p class="bg-slate-200 rounded-2xl px-3 py-1 inline-block text-gray-500">ফায়ার</p>
                 </div>
                 <div class="flex gap-4">
                     <button class="bg-gray-200 px-7 rounded-xl p-1 w-full">Copy</button>
@@ -100,24 +126,24 @@
                 </div>
 
             </div>
-
-            <div class="card-child bg-white border-2 border-blue-900 max-w-80 rounded-xl p-3 shadow-md">
+            <!-- card ambulance -->
+            <div class="card-child bg-white max-w-80 rounded-xl p-3 shadow-md">
                 <div class="flex justify-between mb-3">
-                    <img src="assets/emergency.png" alt="">
+                    <img src="assets/ambulance.png" class="h-8 w-8 rounded-md bg-[#FFE3E2] p-1" alt="">
                     <button>
                         <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-                        <path
-                            d="M305 151.1L320 171.8L335 151.1C360 116.5 400.2 96 442.9 96C516.4 96 576 155.6 576 229.1L576 231.7C576 343.9 436.1 474.2 363.1 529.9C350.7 539.3 335.5 544 320 544C304.5 544 289.2 539.4 276.9 529.9C203.9 474.2 64 343.9 64 231.7L64 229.1C64 155.6 123.6 96 197.1 96C239.8 96 280 116.5 305 151.1z"/>
-                    </svg>
+                            <path
+                                d="M305 151.1L320 171.8L335 151.1C360 116.5 400.2 96 442.9 96C516.4 96 576 155.6 576 229.1L576 231.7C576 343.9 436.1 474.2 363.1 529.9C350.7 539.3 335.5 544 320 544C304.5 544 289.2 539.4 276.9 529.9C203.9 474.2 64 343.9 64 231.7L64 229.1C64 155.6 123.6 96 197.1 96C239.8 96 280 116.5 305 151.1z" />
+                        </svg>
                     </button>
                 </div>
                 <div class="mt-2 mb-5">
-                    <h2 class="font-bold">জাতীয় জরুরি সেবা</h2>
-                    <p class="font-light text-gray-400 text-[10px]">National Emergency</p>
+                    <h2 class="font-bold">অ্যাম্বুলেন্স</h2>
+                    <p class="font-light text-gray-400 text-[10px]">Ambulance</p>
                 </div>
                 <div class="mb-3">
-                    <h1 class="font-bold text-[20px]">999</h1>
-                    <p class="bg-slate-200 rounded-2xl px-3 py-1 inline-block ">সার্বজনীন</p>
+                    <h1 class="font-bold text-[20px]">1994-999999</h1>
+                    <p class="bg-slate-200 rounded-2xl px-3 py-1 inline-block text-gray-500">স্বাস্থ্য</p>
                 </div>
                 <div class="flex gap-4">
                     <button class="bg-gray-200 px-7 rounded-xl p-1 w-full">Copy</button>
@@ -125,24 +151,24 @@
                 </div>
 
             </div>
-
-            <div class="card-child bg-white border-2 border-blue-900 max-w-80 rounded-xl p-3 shadow-md">
+            <!-- card women and child -->
+            <div class="card-child bg-white max-w-80 rounded-xl p-3 shadow-md">
                 <div class="flex justify-between mb-3">
-                    <img src="assets/emergency.png" alt="">
+                    <img src="assets/emergency.png" class="h-8 w-8 rounded-md bg-[#FFE3E2] p-1" alt="">
                     <button>
                         <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-                        <path
-                            d="M305 151.1L320 171.8L335 151.1C360 116.5 400.2 96 442.9 96C516.4 96 576 155.6 576 229.1L576 231.7C576 343.9 436.1 474.2 363.1 529.9C350.7 539.3 335.5 544 320 544C304.5 544 289.2 539.4 276.9 529.9C203.9 474.2 64 343.9 64 231.7L64 229.1C64 155.6 123.6 96 197.1 96C239.8 96 280 116.5 305 151.1z"/>
-                    </svg>
+                            <path
+                                d="M305 151.1L320 171.8L335 151.1C360 116.5 400.2 96 442.9 96C516.4 96 576 155.6 576 229.1L576 231.7C576 343.9 436.1 474.2 363.1 529.9C350.7 539.3 335.5 544 320 544C304.5 544 289.2 539.4 276.9 529.9C203.9 474.2 64 343.9 64 231.7L64 229.1C64 155.6 123.6 96 197.1 96C239.8 96 280 116.5 305 151.1z" />
+                        </svg>
                     </button>
                 </div>
                 <div class="mt-2 mb-5">
-                    <h2 class="font-bold">জাতীয় জরুরি সেবা</h2>
-                    <p class="font-light text-gray-400 text-[10px]">National Emergency</p>
+                    <h2 class="font-bold">নারী ও শিশু সহায়তা</h2>
+                    <p class="font-light text-gray-400 text-[10px]">Women & Child Helpline</p>
                 </div>
                 <div class="mb-3">
-                    <h1 class="font-bold text-[20px]">999</h1>
-                    <p class="bg-slate-200 rounded-2xl px-3 py-1 inline-block ">সার্বজনীন</p>
+                    <h1 class="font-bold text-[20px]">109</h1>
+                    <p class="bg-slate-200 rounded-2xl px-3 py-1 inline-block text-gray-500">সহায়তা</p>
                 </div>
                 <div class="flex gap-4">
                     <button class="bg-gray-200 px-7 rounded-xl p-1 w-full">Copy</button>
@@ -150,24 +176,24 @@
                 </div>
 
             </div>
-
-            <div class="card-child bg-white border-2 border-blue-900 max-w-80 rounded-xl p-3 shadow-md">
+            <!-- card corruption-->
+            <div class="card-child bg-white max-w-80 rounded-xl p-3 shadow-md">
                 <div class="flex justify-between mb-3">
-                    <img src="assets/emergency.png" alt="">
+                    <img src="assets/emergency.png" class="h-8 w-8 rounded-md bg-[#FFE3E2] p-1" alt="">
                     <button>
                         <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-                        <path
-                            d="M305 151.1L320 171.8L335 151.1C360 116.5 400.2 96 442.9 96C516.4 96 576 155.6 576 229.1L576 231.7C576 343.9 436.1 474.2 363.1 529.9C350.7 539.3 335.5 544 320 544C304.5 544 289.2 539.4 276.9 529.9C203.9 474.2 64 343.9 64 231.7L64 229.1C64 155.6 123.6 96 197.1 96C239.8 96 280 116.5 305 151.1z"/>
-                    </svg>
+                            <path
+                                d="M305 151.1L320 171.8L335 151.1C360 116.5 400.2 96 442.9 96C516.4 96 576 155.6 576 229.1L576 231.7C576 343.9 436.1 474.2 363.1 529.9C350.7 539.3 335.5 544 320 544C304.5 544 289.2 539.4 276.9 529.9C203.9 474.2 64 343.9 64 231.7L64 229.1C64 155.6 123.6 96 197.1 96C239.8 96 280 116.5 305 151.1z" />
+                        </svg>
                     </button>
                 </div>
                 <div class="mt-2 mb-5">
-                    <h2 class="font-bold">জাতীয় জরুরি সেবা</h2>
-                    <p class="font-light text-gray-400 text-[10px]">National Emergency</p>
+                    <h2 class="font-bold">দুদক</h2>
+                    <p class="font-light text-gray-400 text-[10px]">Anti-Corruption</p>
                 </div>
                 <div class="mb-3">
-                    <h1 class="font-bold text-[20px]">999</h1>
-                    <p class="bg-slate-200 rounded-2xl px-3 py-1 inline-block ">সার্বজনীন</p>
+                    <h1 class="font-bold text-[20px]">106</h1>
+                    <p class="bg-slate-200 rounded-2xl px-3 py-1 inline-block text-gray-500">সরকারি</p>
                 </div>
                 <div class="flex gap-4">
                     <button class="bg-gray-200 px-7 rounded-xl p-1 w-full">Copy</button>
@@ -175,24 +201,24 @@
                 </div>
 
             </div>
-            
-            <div class="card-child bg-white border-2 border-blue-900 max-w-80 rounded-xl p-3 shadow-md">
+            <!-- card electricity -->
+            <div class="card-child bg-white max-w-80 rounded-xl p-3 shadow-md">
                 <div class="flex justify-between mb-3">
-                    <img src="assets/emergency.png" alt="">
+                    <img src="assets/emergency.png" class="h-8 w-8 rounded-md bg-[#FFE3E2] p-1" alt="">
                     <button>
                         <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-                        <path
-                            d="M305 151.1L320 171.8L335 151.1C360 116.5 400.2 96 442.9 96C516.4 96 576 155.6 576 229.1L576 231.7C576 343.9 436.1 474.2 363.1 529.9C350.7 539.3 335.5 544 320 544C304.5 544 289.2 539.4 276.9 529.9C203.9 474.2 64 343.9 64 231.7L64 229.1C64 155.6 123.6 96 197.1 96C239.8 96 280 116.5 305 151.1z"/>
-                    </svg>
+                            <path
+                                d="M305 151.1L320 171.8L335 151.1C360 116.5 400.2 96 442.9 96C516.4 96 576 155.6 576 229.1L576 231.7C576 343.9 436.1 474.2 363.1 529.9C350.7 539.3 335.5 544 320 544C304.5 544 289.2 539.4 276.9 529.9C203.9 474.2 64 343.9 64 231.7L64 229.1C64 155.6 123.6 96 197.1 96C239.8 96 280 116.5 305 151.1z" />
+                        </svg>
                     </button>
                 </div>
                 <div class="mt-2 mb-5">
-                    <h2 class="font-bold">জাতীয় জরুরি সেবা</h2>
-                    <p class="font-light text-gray-400 text-[10px]">National Emergency</p>
+                    <h2 class="font-bold">বিদ্যুৎ বিভ্রাট</h2>
+                    <p class="font-light text-gray-400 text-[10px]">Electricity Outage</p>
                 </div>
                 <div class="mb-3">
-                    <h1 class="font-bold text-[20px]">999</h1>
-                    <p class="bg-slate-200 rounded-2xl px-3 py-1 inline-block ">সার্বজনীন</p>
+                    <h1 class="font-bold text-[20px]">16216</h1>
+                    <p class="bg-slate-200 rounded-2xl px-3 py-1 inline-block text-gray-500">বিদ্যুৎ</p>
                 </div>
                 <div class="flex gap-4">
                     <button class="bg-gray-200 px-7 rounded-xl p-1 w-full">Copy</button>
@@ -200,24 +226,24 @@
                 </div>
 
             </div>
-
-            <div class="card-child bg-white border-2 border-blue-900 max-w-80 rounded-xl p-3 shadow-md">
+            <!-- card brac ngo-->
+            <div class="card-child bg-white max-w-80 rounded-xl p-3 shadow-md">
                 <div class="flex justify-between mb-3">
-                    <img src="assets/emergency.png" alt="">
+                    <img src="assets/brac.png" class="h-8 w-8 rounded-md bg-[#FFE3E2] p-1" alt="">
                     <button>
                         <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-                        <path
-                            d="M305 151.1L320 171.8L335 151.1C360 116.5 400.2 96 442.9 96C516.4 96 576 155.6 576 229.1L576 231.7C576 343.9 436.1 474.2 363.1 529.9C350.7 539.3 335.5 544 320 544C304.5 544 289.2 539.4 276.9 529.9C203.9 474.2 64 343.9 64 231.7L64 229.1C64 155.6 123.6 96 197.1 96C239.8 96 280 116.5 305 151.1z"/>
-                    </svg>
+                            <path
+                                d="M305 151.1L320 171.8L335 151.1C360 116.5 400.2 96 442.9 96C516.4 96 576 155.6 576 229.1L576 231.7C576 343.9 436.1 474.2 363.1 529.9C350.7 539.3 335.5 544 320 544C304.5 544 289.2 539.4 276.9 529.9C203.9 474.2 64 343.9 64 231.7L64 229.1C64 155.6 123.6 96 197.1 96C239.8 96 280 116.5 305 151.1z" />
+                        </svg>
                     </button>
                 </div>
                 <div class="mt-2 mb-5">
-                    <h2 class="font-bold">জাতীয় জরুরি সেবা</h2>
-                    <p class="font-light text-gray-400 text-[10px]">National Emergency</p>
+                    <h2 class="font-bold">ব্র্যাক</h2>
+                    <p class="font-light text-gray-400 text-[10px]">Brac</p>
                 </div>
                 <div class="mb-3">
-                    <h1 class="font-bold text-[20px]">999</h1>
-                    <p class="bg-slate-200 rounded-2xl px-3 py-1 inline-block ">সার্বজনীন</p>
+                    <h1 class="font-bold text-[20px]">16445</h1>
+                    <p class="bg-slate-200 rounded-2xl px-3 py-1 inline-block text-gray-500">এনজিও</p>
                 </div>
                 <div class="flex gap-4">
                     <button class="bg-gray-200 px-7 rounded-xl p-1 w-full">Copy</button>
@@ -225,49 +251,24 @@
                 </div>
 
             </div>
-
-            <div class="card-child bg-white border-2 border-blue-900 max-w-80 rounded-xl p-3 shadow-md">
+            <!-- card railway-->
+            <div class="card-child bg-white max-w-80 rounded-xl p-3 shadow-md">
                 <div class="flex justify-between mb-3">
-                    <img src="assets/emergency.png" alt="">
+                    <img src="assets/Bangladesh-Railway.png" class="h-8 w-8 rounded-md bg-[#FFE3E2] p-1" alt="">
                     <button>
                         <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-                        <path
-                            d="M305 151.1L320 171.8L335 151.1C360 116.5 400.2 96 442.9 96C516.4 96 576 155.6 576 229.1L576 231.7C576 343.9 436.1 474.2 363.1 529.9C350.7 539.3 335.5 544 320 544C304.5 544 289.2 539.4 276.9 529.9C203.9 474.2 64 343.9 64 231.7L64 229.1C64 155.6 123.6 96 197.1 96C239.8 96 280 116.5 305 151.1z"/>
-                    </svg>
+                            <path
+                                d="M305 151.1L320 171.8L335 151.1C360 116.5 400.2 96 442.9 96C516.4 96 576 155.6 576 229.1L576 231.7C576 343.9 436.1 474.2 363.1 529.9C350.7 539.3 335.5 544 320 544C304.5 544 289.2 539.4 276.9 529.9C203.9 474.2 64 343.9 64 231.7L64 229.1C64 155.6 123.6 96 197.1 96C239.8 96 280 116.5 305 151.1z" />
+                        </svg>
                     </button>
                 </div>
                 <div class="mt-2 mb-5">
-                    <h2 class="font-bold">জাতীয় জরুরি সেবা</h2>
-                    <p class="font-light text-gray-400 text-[10px]">National Emergency</p>
+                    <h2 class="font-bold">বাংলাদেশ রেলওয়ে</h2>
+                    <p class="font-light text-gray-400 text-[10px]">Bangladesh Railway</p>
                 </div>
                 <div class="mb-3">
-                    <h1 class="font-bold text-[20px]">999</h1>
-                    <p class="bg-slate-200 rounded-2xl px-3 py-1 inline-block ">সার্বজনীন</p>
-                </div>
-                <div class="flex gap-4">
-                    <button class="bg-gray-200 px-7 rounded-xl p-1 w-full">Copy</button>
-                    <button class="bg-green-500 px-7 rounded-xl p-1 w-full">Call</button>
-                </div>
-
-            </div>
-
-            <div class="card-child bg-white border-2 border-blue-900 max-w-80 rounded-xl p-3 shadow-md">
-                <div class="flex justify-between mb-3">
-                    <img src="assets/emergency.png" alt="">
-                    <button>
-                        <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-                        <path
-                            d="M305 151.1L320 171.8L335 151.1C360 116.5 400.2 96 442.9 96C516.4 96 576 155.6 576 229.1L576 231.7C576 343.9 436.1 474.2 363.1 529.9C350.7 539.3 335.5 544 320 544C304.5 544 289.2 539.4 276.9 529.9C203.9 474.2 64 343.9 64 231.7L64 229.1C64 155.6 123.6 96 197.1 96C239.8 96 280 116.5 305 151.1z"/>
-                    </svg>
-                    </button>
-                </div>
-                <div class="mt-2 mb-5">
-                    <h2 class="font-bold">জাতীয় জরুরি সেবা</h2>
-                    <p class="font-light text-gray-400 text-[10px]">National Emergency</p>
-                </div>
-                <div class="mb-3">
-                    <h1 class="font-bold text-[20px]">999</h1>
-                    <p class="bg-slate-200 rounded-2xl px-3 py-1 inline-block ">সার্বজনীন</p>
+                    <h1 class="font-bold text-[20px]">163</h1>
+                    <p class="bg-slate-200 rounded-2xl px-3 py-1 inline-block text-gray-500">পরিবহন</p>
                 </div>
                 <div class="flex gap-4">
                     <button class="bg-gray-200 px-7 rounded-xl p-1 w-full">Copy</button>
@@ -278,11 +279,22 @@
 
         </div>
 
-        
-
-
-        <aside class="cart-section bg-yellow-300 col-span-3">
-            <h1>cart</h1>
+        <!-- side cart option -->
+        <aside class="cart-section bg-white col-span-3 p-5 mt-5">
+            
+                <div class="flex items-center justify-between pb-3">
+                    <div class="flex items-center gap-2">
+                        <!-- Clock SVG -->
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor" class="w-5 h-5 text-gray-700">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 6v6l4 2m6-2a10 10 0 11-20 0 10 10 0 0120 0z" />
+                        </svg>
+                        <span class="text-lg font-semibold text-gray-800">Call History</span>
+                    </div>
+                    <button
+                        class="bg-green-500 text-white px-4 py-1 rounded-full text-sm">Clear</button>
+                
         </aside>
     </section>
 
