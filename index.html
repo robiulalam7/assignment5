@@ -11,7 +11,7 @@
 
 <body class="bg-[#F5FFF6]">
     <!-- nav section -->
-    <nav class="nav-parent mx-auto w-full p-10 flex justify-between">
+    <nav class="nav-parent mx-auto w-full p-10 flex justify-between md:flex-2">
         <div class="left-div flex items-center gap-2 ">
             <div class="nav-logo">
                 <img src="./assets/logo.png" class="h-10 w-10" alt="">
@@ -30,7 +30,7 @@
 
             <!-- Coin Count -->
             <div class="flex justify-center items-center bg-green-100 px-5 rounded-full gap-1">
-                <span class="text-sm font-medium">100</span>
+                <span class="text-sm font-medium" id="callCoin">100</span>
                 <img src="./assets/coin.png" alt="coin" class="h-4 w-4">
             </div>
 
@@ -56,9 +56,11 @@
                 <div class="flex justify-between mb-0">
                     <img src="assets/emergency.png" class="h-8 w-8 bg-[#FFE3E2] p-1 rounded-md" alt="">
                     <button class="cursor-pointer heart-count">
-                        <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-                            <path
-                                d="M305 151.1L320 171.8L335 151.1C360 116.5 400.2 96 442.9 96C516.4 96 576 155.6 576 229.1L576 231.7C576 343.9 436.1 474.2 363.1 529.9C350.7 539.3 335.5 544 320 544C304.5 544 289.2 539.4 276.9 529.9C203.9 474.2 64 343.9 64 231.7L64 229.1C64 155.6 123.6 96 197.1 96C239.8 96 280 116.5 305 151.1z" />
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21"
+                            height="19" viewBox="0 0 21 19">
+                            <image
+                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAATCAYAAAB/TkaLAAACrUlEQVR4AZyUS2hTURCG773GBBdWIwjWgEVRi6CCL1waobgQiboISl6EoCk+6kZEURRFBDcqGFxY0abJTa4mCxWsKC5MNwpWBCsKQikFU0R3LkpM87h+c00DoekrZf7MnJk5/50zZ041pfbn9XoX+f3+SCAQGAUmGANPg8FguJaiRCKRpfhugLfgD5C8F+TsnMoRbZESXG+32z+rqvoQ5yi4bZpmEr0N3Udc9/l8HaVS6Su+i2AC3AGS30nOEMS9Uhg+RXO73TaMAQg3EDyq63qXrutnU6nUZafT2UnsPvBrmjZMfCX2YeIHwFVwjJzN+AxixynsHLaiuVyuQxgbwRWInqDrEovFimw8geMVaGPjKdbPsOsiOcViMYzjG4X1oFUNYy+GSeAuupmYOCOgj48+Qk+TbDY7iVPasZpWbZWeLsMxRqCAbipU9xMIcdO4OKvV6rBoinRJpT9YrAIqaFlsNlu7bKZF4xpf+MJiCeO0Cd2yQLaLzZOQf+dStecsJig7hG5VVEilPZl4PP5XSyaTMnP9sJ0OhUIu9IKFGT3JpnaIrcuWi1Ko8hpOk1bI7S6otzwKme9b7DeYjiG0YpFS7W+IL+DYx1evo+cl3EMb/RsguYC2Bh/7P6kYEN9D93OES8zaeexZhSe5gkIGSVoH4f5EIjGObYlVqWXxw5PrRr0EN6lY+tO0FRy5w+FwvCNvC/BB+B5dlwZSeXL5fP4g0cdU3AOxEY1GF7OuC6fYTmUfcayhUg+PIoPdIA2kEsnlcmUSfWyIQXykUCi8DofDyyXGdHShB4nJfLtpmZwKV6NMI62FTTacgTQKdpTL5REqzDAdb4h/wrc7nU5/wG4qM5FayYzIg0qlIv/BpH8eKuzmFHvAiJUww8+spLLHMIxfkHiw11J9L3pO+QcAAP//SvDHIwAAAAZJREFUAwATKCZj1fU3gQAAAABJRU5ErkJggg=="
+                                x="0" y="0" width="21" height="19" />
                         </svg>
                     </button>
                 </div>
@@ -67,25 +69,44 @@
                     <p class="font-light text-gray-400 text-[10px] mb-0">National Emergency</p>
                 </div>
                 <div class="mb-3">
-                    <h1 class="font-bold text-[20px] mb-0">999</h1>
+                    <h1 class="font-bold text-[20px] mb-0 contact-number">999</h1>
                     <p class="bg-slate-200 rounded-2xl px-3 py-1 inline-block mb-0 text-gray-500">সার্বজনীন</p>
                 </div>
                 <div class="flex gap-4 mb-0">
-                    <button class="bg-white border-1 border-gray-300  rounded-xl p-1 w-full flex justify-center items-center gap-2 cursor-pointer copy-click">
-                        <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 11c0-2.828 0-4.243.879-5.121C7.757 5 9.172 5 12 5h3c2.828 0 4.243 0 5.121.879C21 6.757 21 8.172 21 11v5c0 2.828 0 4.243-.879 5.121C19.243 22 17.828 22 15 22h-3c-2.828 0-4.243 0-5.121-.879C6 20.243 6 18.828 6 16z"/><path d="M6 19a3 3 0 0 1-3-3v-6c0-3.771 0-5.657 1.172-6.828S7.229 2 11 2h4a3 3 0 0 1 3 3" opacity="0.5"/></g></svg>
-                     Copy</button>
-                    <button class="bg-green-500  rounded-xl p-1 w-full">Call</button>
+                    <button
+                        class="bg-white border-1 border-gray-300  rounded-xl p-1 w-full flex justify-center items-center gap-2 cursor-pointer copy-click">
+                        <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24">
+                            <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path
+                                    d="M6 11c0-2.828 0-4.243.879-5.121C7.757 5 9.172 5 12 5h3c2.828 0 4.243 0 5.121.879C21 6.757 21 8.172 21 11v5c0 2.828 0 4.243-.879 5.121C19.243 22 17.828 22 15 22h-3c-2.828 0-4.243 0-5.121-.879C6 20.243 6 18.828 6 16z" />
+                                <path
+                                    d="M6 19a3 3 0 0 1-3-3v-6c0-3.771 0-5.657 1.172-6.828S7.229 2 11 2h4a3 3 0 0 1 3 3"
+                                    opacity="0.5" />
+                            </g>
+                        </svg>
+                        Copy</button>
+                    <button
+                        class="bg-green-500  rounded-xl p-1 w-full flex justify-center items-center gap-2 text-white call-click"><svg
+                            class="w-4 h-4" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="14" viewBox="0 0 15 14">
+                            <image
+                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAOCAYAAADwikbvAAABO0lEQVR4AYSSjVHCQBCF79KA2oF0gBWIFWgJsQK0AqEDrCB0EDsAK4AOxA7oYP2+mySjY4DMvdn/t3ubq1L3RcQ8Ir4iYhcR0859VpRikudkrcABXIMNvosEpZjkF/CRc35AiiNSAolQx09FhxmhW/AOUs7Z7uoWXuk7BTvbxXgZEzKJ3nAcIPpGnjwVCXui4hHpkcSuzxrnYGfjjjmjq1fY4nCaBtspMMdPKab7mrDdG6THpdndpRUCiJ7AAhTbpFKsAhzTQAuZRL8JWuLCXQzvYCjuCl5JcvymsyXAlbyOsUlKySs50XQoTnwU+FCWqDXj7ZBHfBNwA1bA39gT1n+KSfY/L5D9FezgqLiGc4/mPvb/iglI4ALv0D+BS/LNt0yzwTa2ZYr1aDEJEvhIavSexP/vQpcUltF/AAAA//8qyjphAAAABklEQVQDABW4fxymTlodAAAAAElFTkSuQmCC"
+                                x="0" y="0" width="15" height="14" />
+                        </svg> Call</button>
                 </div>
 
             </div>
             <!-- card police -->
             <div class="card-child bg-white max-w-80 rounded-xl p-3 shadow-md">
                 <div class="flex justify-between mb-0">
-                    <img src="assets/emergency.png" class="h-8 w-8 bg-[#FFE3E2] p-1 rounded-md" alt="">
+                    <img src="assets/police.png" class="h-8 w-8 bg-[#FFE3E2] p-1 rounded-md" alt="">
                     <button class="cursor-pointer heart-count">
-                        <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-                            <path
-                                d="M305 151.1L320 171.8L335 151.1C360 116.5 400.2 96 442.9 96C516.4 96 576 155.6 576 229.1L576 231.7C576 343.9 436.1 474.2 363.1 529.9C350.7 539.3 335.5 544 320 544C304.5 544 289.2 539.4 276.9 529.9C203.9 474.2 64 343.9 64 231.7L64 229.1C64 155.6 123.6 96 197.1 96C239.8 96 280 116.5 305 151.1z" />
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21"
+                            height="19" viewBox="0 0 21 19">
+                            <image
+                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAATCAYAAAB/TkaLAAACrUlEQVR4AZyUS2hTURCG773GBBdWIwjWgEVRi6CCL1waobgQiboISl6EoCk+6kZEURRFBDcqGFxY0abJTa4mCxWsKC5MNwpWBCsKQikFU0R3LkpM87h+c00DoekrZf7MnJk5/50zZ041pfbn9XoX+f3+SCAQGAUmGANPg8FguJaiRCKRpfhugLfgD5C8F+TsnMoRbZESXG+32z+rqvoQ5yi4bZpmEr0N3Udc9/l8HaVS6Su+i2AC3AGS30nOEMS9Uhg+RXO73TaMAQg3EDyq63qXrutnU6nUZafT2UnsPvBrmjZMfCX2YeIHwFVwjJzN+AxixynsHLaiuVyuQxgbwRWInqDrEovFimw8geMVaGPjKdbPsOsiOcViMYzjG4X1oFUNYy+GSeAuupmYOCOgj48+Qk+TbDY7iVPasZpWbZWeLsMxRqCAbipU9xMIcdO4OKvV6rBoinRJpT9YrAIqaFlsNlu7bKZF4xpf+MJiCeO0Cd2yQLaLzZOQf+dStecsJig7hG5VVEilPZl4PP5XSyaTMnP9sJ0OhUIu9IKFGT3JpnaIrcuWi1Ko8hpOk1bI7S6otzwKme9b7DeYjiG0YpFS7W+IL+DYx1evo+cl3EMb/RsguYC2Bh/7P6kYEN9D93OES8zaeexZhSe5gkIGSVoH4f5EIjGObYlVqWXxw5PrRr0EN6lY+tO0FRy5w+FwvCNvC/BB+B5dlwZSeXL5fP4g0cdU3AOxEY1GF7OuC6fYTmUfcayhUg+PIoPdIA2kEsnlcmUSfWyIQXykUCi8DofDyyXGdHShB4nJfLtpmZwKV6NMI62FTTacgTQKdpTL5REqzDAdb4h/wrc7nU5/wG4qM5FayYzIg0qlIv/BpH8eKuzmFHvAiJUww8+spLLHMIxfkHiw11J9L3pO+QcAAP//SvDHIwAAAAZJREFUAwATKCZj1fU3gQAAAABJRU5ErkJggg=="
+                                x="0" y="0" width="21" height="19" />
                         </svg>
                     </button>
                 </div>
@@ -94,25 +115,44 @@
                     <p class="font-light text-gray-400 text-[10px] mb-0">Police</p>
                 </div>
                 <div class="mb-3">
-                    <h1 class="font-bold text-[20px] mb-0">999</h1>
+                    <h1 class="font-bold text-[20px] mb-0 contact-number">999</h1>
                     <p class="bg-slate-200 rounded-2xl px-3 py-1 inline-block mb-0 text-gray-500">পুলিশ</p>
                 </div>
                 <div class="flex gap-4 mb-0">
-                    <button class="bg-white border-1 border-gray-300  rounded-xl p-1 w-full flex justify-center items-center gap-2 cursor-pointer copy-click">
-                        <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 11c0-2.828 0-4.243.879-5.121C7.757 5 9.172 5 12 5h3c2.828 0 4.243 0 5.121.879C21 6.757 21 8.172 21 11v5c0 2.828 0 4.243-.879 5.121C19.243 22 17.828 22 15 22h-3c-2.828 0-4.243 0-5.121-.879C6 20.243 6 18.828 6 16z"/><path d="M6 19a3 3 0 0 1-3-3v-6c0-3.771 0-5.657 1.172-6.828S7.229 2 11 2h4a3 3 0 0 1 3 3" opacity="0.5"/></g></svg>
-                     Copy</button>
-                    <button class="bg-green-500  rounded-xl p-1 w-full">Call</button>
+                    <button
+                        class="bg-white border-1 border-gray-300  rounded-xl p-1 w-full flex justify-center items-center gap-2 cursor-pointer copy-click">
+                        <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24">
+                            <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path
+                                    d="M6 11c0-2.828 0-4.243.879-5.121C7.757 5 9.172 5 12 5h3c2.828 0 4.243 0 5.121.879C21 6.757 21 8.172 21 11v5c0 2.828 0 4.243-.879 5.121C19.243 22 17.828 22 15 22h-3c-2.828 0-4.243 0-5.121-.879C6 20.243 6 18.828 6 16z" />
+                                <path
+                                    d="M6 19a3 3 0 0 1-3-3v-6c0-3.771 0-5.657 1.172-6.828S7.229 2 11 2h4a3 3 0 0 1 3 3"
+                                    opacity="0.5" />
+                            </g>
+                        </svg>
+                        Copy</button>
+                    <button
+                        class="bg-green-500  rounded-xl p-1 w-full flex justify-center items-center gap-2 text-white call-click"><svg
+                            class="w-4 h-4" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="14" viewBox="0 0 15 14">
+                            <image
+                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAOCAYAAADwikbvAAABO0lEQVR4AYSSjVHCQBCF79KA2oF0gBWIFWgJsQK0AqEDrCB0EDsAK4AOxA7oYP2+mySjY4DMvdn/t3ubq1L3RcQ8Ir4iYhcR0859VpRikudkrcABXIMNvosEpZjkF/CRc35AiiNSAolQx09FhxmhW/AOUs7Z7uoWXuk7BTvbxXgZEzKJ3nAcIPpGnjwVCXui4hHpkcSuzxrnYGfjjjmjq1fY4nCaBtspMMdPKab7mrDdG6THpdndpRUCiJ7AAhTbpFKsAhzTQAuZRL8JWuLCXQzvYCjuCl5JcvymsyXAlbyOsUlKySs50XQoTnwU+FCWqDXj7ZBHfBNwA1bA39gT1n+KSfY/L5D9FezgqLiGc4/mPvb/iglI4ALv0D+BS/LNt0yzwTa2ZYr1aDEJEvhIavSexP/vQpcUltF/AAAA//8qyjphAAAABklEQVQDABW4fxymTlodAAAAAElFTkSuQmCC"
+                                x="0" y="0" width="15" height="14" />
+                        </svg> Call</button>
                 </div>
 
             </div>
             <!-- card fire service -->
             <div class="card-child bg-white max-w-80 rounded-xl p-3 shadow-md">
                 <div class="flex justify-between mb-0">
-                    <img src="assets/emergency.png" class="h-8 w-8 bg-[#FFE3E2] p-1 rounded-md" alt="">
+                    <img src="assets/fire-service.png" class="h-8 w-8 bg-[#FFE3E2] p-1 rounded-md" alt="">
                     <button class="cursor-pointer heart-count">
-                        <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-                            <path
-                                d="M305 151.1L320 171.8L335 151.1C360 116.5 400.2 96 442.9 96C516.4 96 576 155.6 576 229.1L576 231.7C576 343.9 436.1 474.2 363.1 529.9C350.7 539.3 335.5 544 320 544C304.5 544 289.2 539.4 276.9 529.9C203.9 474.2 64 343.9 64 231.7L64 229.1C64 155.6 123.6 96 197.1 96C239.8 96 280 116.5 305 151.1z" />
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21"
+                            height="19" viewBox="0 0 21 19">
+                            <image
+                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAATCAYAAAB/TkaLAAACrUlEQVR4AZyUS2hTURCG773GBBdWIwjWgEVRi6CCL1waobgQiboISl6EoCk+6kZEURRFBDcqGFxY0abJTa4mCxWsKC5MNwpWBCsKQikFU0R3LkpM87h+c00DoekrZf7MnJk5/50zZ041pfbn9XoX+f3+SCAQGAUmGANPg8FguJaiRCKRpfhugLfgD5C8F+TsnMoRbZESXG+32z+rqvoQ5yi4bZpmEr0N3Udc9/l8HaVS6Su+i2AC3AGS30nOEMS9Uhg+RXO73TaMAQg3EDyq63qXrutnU6nUZafT2UnsPvBrmjZMfCX2YeIHwFVwjJzN+AxixynsHLaiuVyuQxgbwRWInqDrEovFimw8geMVaGPjKdbPsOsiOcViMYzjG4X1oFUNYy+GSeAuupmYOCOgj48+Qk+TbDY7iVPasZpWbZWeLsMxRqCAbipU9xMIcdO4OKvV6rBoinRJpT9YrAIqaFlsNlu7bKZF4xpf+MJiCeO0Cd2yQLaLzZOQf+dStecsJig7hG5VVEilPZl4PP5XSyaTMnP9sJ0OhUIu9IKFGT3JpnaIrcuWi1Ko8hpOk1bI7S6otzwKme9b7DeYjiG0YpFS7W+IL+DYx1evo+cl3EMb/RsguYC2Bh/7P6kYEN9D93OES8zaeexZhSe5gkIGSVoH4f5EIjGObYlVqWXxw5PrRr0EN6lY+tO0FRy5w+FwvCNvC/BB+B5dlwZSeXL5fP4g0cdU3AOxEY1GF7OuC6fYTmUfcayhUg+PIoPdIA2kEsnlcmUSfWyIQXykUCi8DofDyyXGdHShB4nJfLtpmZwKV6NMI62FTTacgTQKdpTL5REqzDAdb4h/wrc7nU5/wG4qM5FayYzIg0qlIv/BpH8eKuzmFHvAiJUww8+spLLHMIxfkHiw11J9L3pO+QcAAP//SvDHIwAAAAZJREFUAwATKCZj1fU3gQAAAABJRU5ErkJggg=="
+                                x="0" y="0" width="21" height="19" />
                         </svg>
                     </button>
                 </div>
@@ -121,25 +161,44 @@
                     <p class="font-light text-gray-400 text-[10px] mb-0">Fire Service</p>
                 </div>
                 <div class="mb-3">
-                    <h1 class="font-bold text-[20px] mb-0">999</h1>
+                    <h1 class="font-bold text-[20px] mb-0 contact-number">999</h1>
                     <p class="bg-slate-200 rounded-2xl px-3 py-1 inline-block mb-0 text-gray-500">ফায়ার</p>
                 </div>
                 <div class="flex gap-4 mb-0">
-                    <button class="bg-white border-1 border-gray-300  rounded-xl p-1 w-full flex justify-center items-center gap-2 cursor-pointer copy-click">
-                        <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 11c0-2.828 0-4.243.879-5.121C7.757 5 9.172 5 12 5h3c2.828 0 4.243 0 5.121.879C21 6.757 21 8.172 21 11v5c0 2.828 0 4.243-.879 5.121C19.243 22 17.828 22 15 22h-3c-2.828 0-4.243 0-5.121-.879C6 20.243 6 18.828 6 16z"/><path d="M6 19a3 3 0 0 1-3-3v-6c0-3.771 0-5.657 1.172-6.828S7.229 2 11 2h4a3 3 0 0 1 3 3" opacity="0.5"/></g></svg>
-                     Copy</button>
-                    <button class="bg-green-500  rounded-xl p-1 w-full">Call</button>
+                    <button
+                        class="bg-white border-1 border-gray-300  rounded-xl p-1 w-full flex justify-center items-center gap-2 cursor-pointer copy-click">
+                        <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24">
+                            <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path
+                                    d="M6 11c0-2.828 0-4.243.879-5.121C7.757 5 9.172 5 12 5h3c2.828 0 4.243 0 5.121.879C21 6.757 21 8.172 21 11v5c0 2.828 0 4.243-.879 5.121C19.243 22 17.828 22 15 22h-3c-2.828 0-4.243 0-5.121-.879C6 20.243 6 18.828 6 16z" />
+                                <path
+                                    d="M6 19a3 3 0 0 1-3-3v-6c0-3.771 0-5.657 1.172-6.828S7.229 2 11 2h4a3 3 0 0 1 3 3"
+                                    opacity="0.5" />
+                            </g>
+                        </svg>
+                        Copy</button>
+                    <button
+                        class="bg-green-500  rounded-xl p-1 w-full flex justify-center items-center gap-2 text-white call-click"><svg
+                            class="w-4 h-4" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="14" viewBox="0 0 15 14">
+                            <image
+                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAOCAYAAADwikbvAAABO0lEQVR4AYSSjVHCQBCF79KA2oF0gBWIFWgJsQK0AqEDrCB0EDsAK4AOxA7oYP2+mySjY4DMvdn/t3ubq1L3RcQ8Ir4iYhcR0859VpRikudkrcABXIMNvosEpZjkF/CRc35AiiNSAolQx09FhxmhW/AOUs7Z7uoWXuk7BTvbxXgZEzKJ3nAcIPpGnjwVCXui4hHpkcSuzxrnYGfjjjmjq1fY4nCaBtspMMdPKab7mrDdG6THpdndpRUCiJ7AAhTbpFKsAhzTQAuZRL8JWuLCXQzvYCjuCl5JcvymsyXAlbyOsUlKySs50XQoTnwU+FCWqDXj7ZBHfBNwA1bA39gT1n+KSfY/L5D9FezgqLiGc4/mPvb/iglI4ALv0D+BS/LNt0yzwTa2ZYr1aDEJEvhIavSexP/vQpcUltF/AAAA//8qyjphAAAABklEQVQDABW4fxymTlodAAAAAElFTkSuQmCC"
+                                x="0" y="0" width="15" height="14" />
+                        </svg> Call</button>
                 </div>
 
             </div>
             <!-- card ambulance -->
             <div class="card-child bg-white max-w-80 rounded-xl p-3 shadow-md">
                 <div class="flex justify-between mb-0">
-                    <img src="assets/emergency.png" class="h-8 w-8 bg-[#FFE3E2] p-1 rounded-md" alt="">
+                    <img src="assets/ambulance.png" class="h-8 w-8 bg-[#FFE3E2] p-1 rounded-md" alt="">
                     <button class="cursor-pointer heart-count">
-                        <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-                            <path
-                                d="M305 151.1L320 171.8L335 151.1C360 116.5 400.2 96 442.9 96C516.4 96 576 155.6 576 229.1L576 231.7C576 343.9 436.1 474.2 363.1 529.9C350.7 539.3 335.5 544 320 544C304.5 544 289.2 539.4 276.9 529.9C203.9 474.2 64 343.9 64 231.7L64 229.1C64 155.6 123.6 96 197.1 96C239.8 96 280 116.5 305 151.1z" />
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21"
+                            height="19" viewBox="0 0 21 19">
+                            <image
+                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAATCAYAAAB/TkaLAAACrUlEQVR4AZyUS2hTURCG773GBBdWIwjWgEVRi6CCL1waobgQiboISl6EoCk+6kZEURRFBDcqGFxY0abJTa4mCxWsKC5MNwpWBCsKQikFU0R3LkpM87h+c00DoekrZf7MnJk5/50zZ041pfbn9XoX+f3+SCAQGAUmGANPg8FguJaiRCKRpfhugLfgD5C8F+TsnMoRbZESXG+32z+rqvoQ5yi4bZpmEr0N3Udc9/l8HaVS6Su+i2AC3AGS30nOEMS9Uhg+RXO73TaMAQg3EDyq63qXrutnU6nUZafT2UnsPvBrmjZMfCX2YeIHwFVwjJzN+AxixynsHLaiuVyuQxgbwRWInqDrEovFimw8geMVaGPjKdbPsOsiOcViMYzjG4X1oFUNYy+GSeAuupmYOCOgj48+Qk+TbDY7iVPasZpWbZWeLsMxRqCAbipU9xMIcdO4OKvV6rBoinRJpT9YrAIqaFlsNlu7bKZF4xpf+MJiCeO0Cd2yQLaLzZOQf+dStecsJig7hG5VVEilPZl4PP5XSyaTMnP9sJ0OhUIu9IKFGT3JpnaIrcuWi1Ko8hpOk1bI7S6otzwKme9b7DeYjiG0YpFS7W+IL+DYx1evo+cl3EMb/RsguYC2Bh/7P6kYEN9D93OES8zaeexZhSe5gkIGSVoH4f5EIjGObYlVqWXxw5PrRr0EN6lY+tO0FRy5w+FwvCNvC/BB+B5dlwZSeXL5fP4g0cdU3AOxEY1GF7OuC6fYTmUfcayhUg+PIoPdIA2kEsnlcmUSfWyIQXykUCi8DofDyyXGdHShB4nJfLtpmZwKV6NMI62FTTacgTQKdpTL5REqzDAdb4h/wrc7nU5/wG4qM5FayYzIg0qlIv/BpH8eKuzmFHvAiJUww8+spLLHMIxfkHiw11J9L3pO+QcAAP//SvDHIwAAAAZJREFUAwATKCZj1fU3gQAAAABJRU5ErkJggg=="
+                                x="0" y="0" width="21" height="19" />
                         </svg>
                     </button>
                 </div>
@@ -148,14 +207,31 @@
                     <p class="font-light text-gray-400 text-[10px] mb-0">Ambulance</p>
                 </div>
                 <div class="mb-3">
-                    <h1 class="font-bold text-[20px] mb-0">1994-999999</h1>
+                    <h1 class="font-bold text-[20px] mb-0 contact-number">1994-999999</h1>
                     <p class="bg-slate-200 rounded-2xl px-3 py-1 inline-block mb-0 text-gray-500">স্বাস্থ্য</p>
                 </div>
                 <div class="flex gap-4 mb-0">
-                    <button class="bg-white border-1 border-gray-300  rounded-xl p-1 w-full flex justify-center items-center gap-2 cursor-pointer copy-click">
-                        <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 11c0-2.828 0-4.243.879-5.121C7.757 5 9.172 5 12 5h3c2.828 0 4.243 0 5.121.879C21 6.757 21 8.172 21 11v5c0 2.828 0 4.243-.879 5.121C19.243 22 17.828 22 15 22h-3c-2.828 0-4.243 0-5.121-.879C6 20.243 6 18.828 6 16z"/><path d="M6 19a3 3 0 0 1-3-3v-6c0-3.771 0-5.657 1.172-6.828S7.229 2 11 2h4a3 3 0 0 1 3 3" opacity="0.5"/></g></svg>
-                     Copy</button>
-                    <button class="bg-green-500  rounded-xl p-1 w-full">Call</button>
+                    <button
+                        class="bg-white border-1 border-gray-300  rounded-xl p-1 w-full flex justify-center items-center gap-2 cursor-pointer copy-click">
+                        <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24">
+                            <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path
+                                    d="M6 11c0-2.828 0-4.243.879-5.121C7.757 5 9.172 5 12 5h3c2.828 0 4.243 0 5.121.879C21 6.757 21 8.172 21 11v5c0 2.828 0 4.243-.879 5.121C19.243 22 17.828 22 15 22h-3c-2.828 0-4.243 0-5.121-.879C6 20.243 6 18.828 6 16z" />
+                                <path
+                                    d="M6 19a3 3 0 0 1-3-3v-6c0-3.771 0-5.657 1.172-6.828S7.229 2 11 2h4a3 3 0 0 1 3 3"
+                                    opacity="0.5" />
+                            </g>
+                        </svg>
+                        Copy</button>
+                    <button
+                        class="bg-green-500  rounded-xl p-1 w-full flex justify-center items-center gap-2 text-white call-click"><svg
+                            class="w-4 h-4" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="14" viewBox="0 0 15 14">
+                            <image
+                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAOCAYAAADwikbvAAABO0lEQVR4AYSSjVHCQBCF79KA2oF0gBWIFWgJsQK0AqEDrCB0EDsAK4AOxA7oYP2+mySjY4DMvdn/t3ubq1L3RcQ8Ir4iYhcR0859VpRikudkrcABXIMNvosEpZjkF/CRc35AiiNSAolQx09FhxmhW/AOUs7Z7uoWXuk7BTvbxXgZEzKJ3nAcIPpGnjwVCXui4hHpkcSuzxrnYGfjjjmjq1fY4nCaBtspMMdPKab7mrDdG6THpdndpRUCiJ7AAhTbpFKsAhzTQAuZRL8JWuLCXQzvYCjuCl5JcvymsyXAlbyOsUlKySs50XQoTnwU+FCWqDXj7ZBHfBNwA1bA39gT1n+KSfY/L5D9FezgqLiGc4/mPvb/iglI4ALv0D+BS/LNt0yzwTa2ZYr1aDEJEvhIavSexP/vQpcUltF/AAAA//8qyjphAAAABklEQVQDABW4fxymTlodAAAAAElFTkSuQmCC"
+                                x="0" y="0" width="15" height="14" />
+                        </svg> Call</button>
                 </div>
 
             </div>
@@ -164,9 +240,11 @@
                 <div class="flex justify-between mb-0">
                     <img src="assets/emergency.png" class="h-8 w-8 bg-[#FFE3E2] p-1 rounded-md" alt="">
                     <button class="cursor-pointer heart-count">
-                        <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-                            <path
-                                d="M305 151.1L320 171.8L335 151.1C360 116.5 400.2 96 442.9 96C516.4 96 576 155.6 576 229.1L576 231.7C576 343.9 436.1 474.2 363.1 529.9C350.7 539.3 335.5 544 320 544C304.5 544 289.2 539.4 276.9 529.9C203.9 474.2 64 343.9 64 231.7L64 229.1C64 155.6 123.6 96 197.1 96C239.8 96 280 116.5 305 151.1z" />
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21"
+                            height="19" viewBox="0 0 21 19">
+                            <image
+                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAATCAYAAAB/TkaLAAACrUlEQVR4AZyUS2hTURCG773GBBdWIwjWgEVRi6CCL1waobgQiboISl6EoCk+6kZEURRFBDcqGFxY0abJTa4mCxWsKC5MNwpWBCsKQikFU0R3LkpM87h+c00DoekrZf7MnJk5/50zZ041pfbn9XoX+f3+SCAQGAUmGANPg8FguJaiRCKRpfhugLfgD5C8F+TsnMoRbZESXG+32z+rqvoQ5yi4bZpmEr0N3Udc9/l8HaVS6Su+i2AC3AGS30nOEMS9Uhg+RXO73TaMAQg3EDyq63qXrutnU6nUZafT2UnsPvBrmjZMfCX2YeIHwFVwjJzN+AxixynsHLaiuVyuQxgbwRWInqDrEovFimw8geMVaGPjKdbPsOsiOcViMYzjG4X1oFUNYy+GSeAuupmYOCOgj48+Qk+TbDY7iVPasZpWbZWeLsMxRqCAbipU9xMIcdO4OKvV6rBoinRJpT9YrAIqaFlsNlu7bKZF4xpf+MJiCeO0Cd2yQLaLzZOQf+dStecsJig7hG5VVEilPZl4PP5XSyaTMnP9sJ0OhUIu9IKFGT3JpnaIrcuWi1Ko8hpOk1bI7S6otzwKme9b7DeYjiG0YpFS7W+IL+DYx1evo+cl3EMb/RsguYC2Bh/7P6kYEN9D93OES8zaeexZhSe5gkIGSVoH4f5EIjGObYlVqWXxw5PrRr0EN6lY+tO0FRy5w+FwvCNvC/BB+B5dlwZSeXL5fP4g0cdU3AOxEY1GF7OuC6fYTmUfcayhUg+PIoPdIA2kEsnlcmUSfWyIQXykUCi8DofDyyXGdHShB4nJfLtpmZwKV6NMI62FTTacgTQKdpTL5REqzDAdb4h/wrc7nU5/wG4qM5FayYzIg0qlIv/BpH8eKuzmFHvAiJUww8+spLLHMIxfkHiw11J9L3pO+QcAAP//SvDHIwAAAAZJREFUAwATKCZj1fU3gQAAAABJRU5ErkJggg=="
+                                x="0" y="0" width="21" height="19" />
                         </svg>
                     </button>
                 </div>
@@ -175,14 +253,31 @@
                     <p class="font-light text-gray-400 text-[10px] mb-0">Women & Child Helpline</p>
                 </div>
                 <div class="mb-3">
-                    <h1 class="font-bold text-[20px] mb-0">109</h1>
+                    <h1 class="font-bold text-[20px] mb-0 contact-number">109</h1>
                     <p class="bg-slate-200 rounded-2xl px-3 py-1 inline-block mb-0 text-gray-500">সহায়তা</p>
                 </div>
                 <div class="flex gap-4 mb-0">
-                    <button class="bg-white border-1 border-gray-300  rounded-xl p-1 w-full flex justify-center items-center gap-2 cursor-pointer copy-click">
-                        <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 11c0-2.828 0-4.243.879-5.121C7.757 5 9.172 5 12 5h3c2.828 0 4.243 0 5.121.879C21 6.757 21 8.172 21 11v5c0 2.828 0 4.243-.879 5.121C19.243 22 17.828 22 15 22h-3c-2.828 0-4.243 0-5.121-.879C6 20.243 6 18.828 6 16z"/><path d="M6 19a3 3 0 0 1-3-3v-6c0-3.771 0-5.657 1.172-6.828S7.229 2 11 2h4a3 3 0 0 1 3 3" opacity="0.5"/></g></svg>
-                     Copy</button>
-                    <button class="bg-green-500  rounded-xl p-1 w-full">Call</button>
+                    <button
+                        class="bg-white border-1 border-gray-300  rounded-xl p-1 w-full flex justify-center items-center gap-2 cursor-pointer copy-click">
+                        <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24">
+                            <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path
+                                    d="M6 11c0-2.828 0-4.243.879-5.121C7.757 5 9.172 5 12 5h3c2.828 0 4.243 0 5.121.879C21 6.757 21 8.172 21 11v5c0 2.828 0 4.243-.879 5.121C19.243 22 17.828 22 15 22h-3c-2.828 0-4.243 0-5.121-.879C6 20.243 6 18.828 6 16z" />
+                                <path
+                                    d="M6 19a3 3 0 0 1-3-3v-6c0-3.771 0-5.657 1.172-6.828S7.229 2 11 2h4a3 3 0 0 1 3 3"
+                                    opacity="0.5" />
+                            </g>
+                        </svg>
+                        Copy</button>
+                    <button
+                        class="bg-green-500  rounded-xl p-1 w-full flex justify-center items-center gap-2 text-white call-click"><svg
+                            class="w-4 h-4" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="14" viewBox="0 0 15 14">
+                            <image
+                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAOCAYAAADwikbvAAABO0lEQVR4AYSSjVHCQBCF79KA2oF0gBWIFWgJsQK0AqEDrCB0EDsAK4AOxA7oYP2+mySjY4DMvdn/t3ubq1L3RcQ8Ir4iYhcR0859VpRikudkrcABXIMNvosEpZjkF/CRc35AiiNSAolQx09FhxmhW/AOUs7Z7uoWXuk7BTvbxXgZEzKJ3nAcIPpGnjwVCXui4hHpkcSuzxrnYGfjjjmjq1fY4nCaBtspMMdPKab7mrDdG6THpdndpRUCiJ7AAhTbpFKsAhzTQAuZRL8JWuLCXQzvYCjuCl5JcvymsyXAlbyOsUlKySs50XQoTnwU+FCWqDXj7ZBHfBNwA1bA39gT1n+KSfY/L5D9FezgqLiGc4/mPvb/iglI4ALv0D+BS/LNt0yzwTa2ZYr1aDEJEvhIavSexP/vQpcUltF/AAAA//8qyjphAAAABklEQVQDABW4fxymTlodAAAAAElFTkSuQmCC"
+                                x="0" y="0" width="15" height="14" />
+                        </svg> Call</button>
                 </div>
 
             </div>
@@ -191,9 +286,11 @@
                 <div class="flex justify-between mb-0">
                     <img src="assets/emergency.png" class="h-8 w-8 bg-[#FFE3E2] p-1 rounded-md" alt="">
                     <button class="cursor-pointer heart-count">
-                        <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-                            <path
-                                d="M305 151.1L320 171.8L335 151.1C360 116.5 400.2 96 442.9 96C516.4 96 576 155.6 576 229.1L576 231.7C576 343.9 436.1 474.2 363.1 529.9C350.7 539.3 335.5 544 320 544C304.5 544 289.2 539.4 276.9 529.9C203.9 474.2 64 343.9 64 231.7L64 229.1C64 155.6 123.6 96 197.1 96C239.8 96 280 116.5 305 151.1z" />
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21"
+                            height="19" viewBox="0 0 21 19">
+                            <image
+                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAATCAYAAAB/TkaLAAACrUlEQVR4AZyUS2hTURCG773GBBdWIwjWgEVRi6CCL1waobgQiboISl6EoCk+6kZEURRFBDcqGFxY0abJTa4mCxWsKC5MNwpWBCsKQikFU0R3LkpM87h+c00DoekrZf7MnJk5/50zZ041pfbn9XoX+f3+SCAQGAUmGANPg8FguJaiRCKRpfhugLfgD5C8F+TsnMoRbZESXG+32z+rqvoQ5yi4bZpmEr0N3Udc9/l8HaVS6Su+i2AC3AGS30nOEMS9Uhg+RXO73TaMAQg3EDyq63qXrutnU6nUZafT2UnsPvBrmjZMfCX2YeIHwFVwjJzN+AxixynsHLaiuVyuQxgbwRWInqDrEovFimw8geMVaGPjKdbPsOsiOcViMYzjG4X1oFUNYy+GSeAuupmYOCOgj48+Qk+TbDY7iVPasZpWbZWeLsMxRqCAbipU9xMIcdO4OKvV6rBoinRJpT9YrAIqaFlsNlu7bKZF4xpf+MJiCeO0Cd2yQLaLzZOQf+dStecsJig7hG5VVEilPZl4PP5XSyaTMnP9sJ0OhUIu9IKFGT3JpnaIrcuWi1Ko8hpOk1bI7S6otzwKme9b7DeYjiG0YpFS7W+IL+DYx1evo+cl3EMb/RsguYC2Bh/7P6kYEN9D93OES8zaeexZhSe5gkIGSVoH4f5EIjGObYlVqWXxw5PrRr0EN6lY+tO0FRy5w+FwvCNvC/BB+B5dlwZSeXL5fP4g0cdU3AOxEY1GF7OuC6fYTmUfcayhUg+PIoPdIA2kEsnlcmUSfWyIQXykUCi8DofDyyXGdHShB4nJfLtpmZwKV6NMI62FTTacgTQKdpTL5REqzDAdb4h/wrc7nU5/wG4qM5FayYzIg0qlIv/BpH8eKuzmFHvAiJUww8+spLLHMIxfkHiw11J9L3pO+QcAAP//SvDHIwAAAAZJREFUAwATKCZj1fU3gQAAAABJRU5ErkJggg=="
+                                x="0" y="0" width="21" height="19" />
                         </svg>
                     </button>
                 </div>
@@ -202,14 +299,31 @@
                     <p class="font-light text-gray-400 text-[10px] mb-0">Anti-Corruption</p>
                 </div>
                 <div class="mb-3">
-                    <h1 class="font-bold text-[20px] mb-0">106</h1>
+                    <h1 class="font-bold text-[20px] mb-0 contact-number">106</h1>
                     <p class="bg-slate-200 rounded-2xl px-3 py-1 inline-block mb-0 text-gray-500">সরকারি</p>
                 </div>
                 <div class="flex gap-4 mb-0">
-                    <button class="bg-white border-1 border-gray-300  rounded-xl p-1 w-full flex justify-center items-center gap-2 cursor-pointer copy-click">
-                        <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 11c0-2.828 0-4.243.879-5.121C7.757 5 9.172 5 12 5h3c2.828 0 4.243 0 5.121.879C21 6.757 21 8.172 21 11v5c0 2.828 0 4.243-.879 5.121C19.243 22 17.828 22 15 22h-3c-2.828 0-4.243 0-5.121-.879C6 20.243 6 18.828 6 16z"/><path d="M6 19a3 3 0 0 1-3-3v-6c0-3.771 0-5.657 1.172-6.828S7.229 2 11 2h4a3 3 0 0 1 3 3" opacity="0.5"/></g></svg>
-                     Copy</button>
-                    <button class="bg-green-500  rounded-xl p-1 w-full">Call</button>
+                    <button
+                        class="bg-white border-1 border-gray-300  rounded-xl p-1 w-full flex justify-center items-center gap-2 cursor-pointer copy-click">
+                        <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24">
+                            <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path
+                                    d="M6 11c0-2.828 0-4.243.879-5.121C7.757 5 9.172 5 12 5h3c2.828 0 4.243 0 5.121.879C21 6.757 21 8.172 21 11v5c0 2.828 0 4.243-.879 5.121C19.243 22 17.828 22 15 22h-3c-2.828 0-4.243 0-5.121-.879C6 20.243 6 18.828 6 16z" />
+                                <path
+                                    d="M6 19a3 3 0 0 1-3-3v-6c0-3.771 0-5.657 1.172-6.828S7.229 2 11 2h4a3 3 0 0 1 3 3"
+                                    opacity="0.5" />
+                            </g>
+                        </svg>
+                        Copy</button>
+                    <button
+                        class="bg-green-500  rounded-xl p-1 w-full flex justify-center items-center gap-2 text-white call-click"><svg
+                            class="w-4 h-4" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="14" viewBox="0 0 15 14">
+                            <image
+                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAOCAYAAADwikbvAAABO0lEQVR4AYSSjVHCQBCF79KA2oF0gBWIFWgJsQK0AqEDrCB0EDsAK4AOxA7oYP2+mySjY4DMvdn/t3ubq1L3RcQ8Ir4iYhcR0859VpRikudkrcABXIMNvosEpZjkF/CRc35AiiNSAolQx09FhxmhW/AOUs7Z7uoWXuk7BTvbxXgZEzKJ3nAcIPpGnjwVCXui4hHpkcSuzxrnYGfjjjmjq1fY4nCaBtspMMdPKab7mrDdG6THpdndpRUCiJ7AAhTbpFKsAhzTQAuZRL8JWuLCXQzvYCjuCl5JcvymsyXAlbyOsUlKySs50XQoTnwU+FCWqDXj7ZBHfBNwA1bA39gT1n+KSfY/L5D9FezgqLiGc4/mPvb/iglI4ALv0D+BS/LNt0yzwTa2ZYr1aDEJEvhIavSexP/vQpcUltF/AAAA//8qyjphAAAABklEQVQDABW4fxymTlodAAAAAElFTkSuQmCC"
+                                x="0" y="0" width="15" height="14" />
+                        </svg> Call</button>
                 </div>
 
             </div>
@@ -218,9 +332,11 @@
                 <div class="flex justify-between mb-0">
                     <img src="assets/emergency.png" class="h-8 w-8 bg-[#FFE3E2] p-1 rounded-md" alt="">
                     <button class="cursor-pointer heart-count">
-                        <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-                            <path
-                                d="M305 151.1L320 171.8L335 151.1C360 116.5 400.2 96 442.9 96C516.4 96 576 155.6 576 229.1L576 231.7C576 343.9 436.1 474.2 363.1 529.9C350.7 539.3 335.5 544 320 544C304.5 544 289.2 539.4 276.9 529.9C203.9 474.2 64 343.9 64 231.7L64 229.1C64 155.6 123.6 96 197.1 96C239.8 96 280 116.5 305 151.1z" />
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21"
+                            height="19" viewBox="0 0 21 19">
+                            <image
+                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAATCAYAAAB/TkaLAAACrUlEQVR4AZyUS2hTURCG773GBBdWIwjWgEVRi6CCL1waobgQiboISl6EoCk+6kZEURRFBDcqGFxY0abJTa4mCxWsKC5MNwpWBCsKQikFU0R3LkpM87h+c00DoekrZf7MnJk5/50zZ041pfbn9XoX+f3+SCAQGAUmGANPg8FguJaiRCKRpfhugLfgD5C8F+TsnMoRbZESXG+32z+rqvoQ5yi4bZpmEr0N3Udc9/l8HaVS6Su+i2AC3AGS30nOEMS9Uhg+RXO73TaMAQg3EDyq63qXrutnU6nUZafT2UnsPvBrmjZMfCX2YeIHwFVwjJzN+AxixynsHLaiuVyuQxgbwRWInqDrEovFimw8geMVaGPjKdbPsOsiOcViMYzjG4X1oFUNYy+GSeAuupmYOCOgj48+Qk+TbDY7iVPasZpWbZWeLsMxRqCAbipU9xMIcdO4OKvV6rBoinRJpT9YrAIqaFlsNlu7bKZF4xpf+MJiCeO0Cd2yQLaLzZOQf+dStecsJig7hG5VVEilPZl4PP5XSyaTMnP9sJ0OhUIu9IKFGT3JpnaIrcuWi1Ko8hpOk1bI7S6otzwKme9b7DeYjiG0YpFS7W+IL+DYx1evo+cl3EMb/RsguYC2Bh/7P6kYEN9D93OES8zaeexZhSe5gkIGSVoH4f5EIjGObYlVqWXxw5PrRr0EN6lY+tO0FRy5w+FwvCNvC/BB+B5dlwZSeXL5fP4g0cdU3AOxEY1GF7OuC6fYTmUfcayhUg+PIoPdIA2kEsnlcmUSfWyIQXykUCi8DofDyyXGdHShB4nJfLtpmZwKV6NMI62FTTacgTQKdpTL5REqzDAdb4h/wrc7nU5/wG4qM5FayYzIg0qlIv/BpH8eKuzmFHvAiJUww8+spLLHMIxfkHiw11J9L3pO+QcAAP//SvDHIwAAAAZJREFUAwATKCZj1fU3gQAAAABJRU5ErkJggg=="
+                                x="0" y="0" width="21" height="19" />
                         </svg>
                     </button>
                 </div>
@@ -229,25 +345,44 @@
                     <p class="font-light text-gray-400 text-[10px] mb-0">Electricity Outage</p>
                 </div>
                 <div class="mb-3">
-                    <h1 class="font-bold text-[20px] mb-0">16216</h1>
+                    <h1 class="font-bold text-[20px] mb-0 contact-number">16216</h1>
                     <p class="bg-slate-200 rounded-2xl px-3 py-1 inline-block mb-0 text-gray-500">বিদ্যুৎ</p>
                 </div>
                 <div class="flex gap-4 mb-0">
-                    <button class="bg-white border-1 border-gray-300  rounded-xl p-1 w-full flex justify-center items-center gap-2 cursor-pointer copy-click">
-                        <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 11c0-2.828 0-4.243.879-5.121C7.757 5 9.172 5 12 5h3c2.828 0 4.243 0 5.121.879C21 6.757 21 8.172 21 11v5c0 2.828 0 4.243-.879 5.121C19.243 22 17.828 22 15 22h-3c-2.828 0-4.243 0-5.121-.879C6 20.243 6 18.828 6 16z"/><path d="M6 19a3 3 0 0 1-3-3v-6c0-3.771 0-5.657 1.172-6.828S7.229 2 11 2h4a3 3 0 0 1 3 3" opacity="0.5"/></g></svg>
-                     Copy</button>
-                    <button class="bg-green-500  rounded-xl p-1 w-full">Call</button>
+                    <button
+                        class="bg-white border-1 border-gray-300  rounded-xl p-1 w-full flex justify-center items-center gap-2 cursor-pointer copy-click">
+                        <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24">
+                            <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path
+                                    d="M6 11c0-2.828 0-4.243.879-5.121C7.757 5 9.172 5 12 5h3c2.828 0 4.243 0 5.121.879C21 6.757 21 8.172 21 11v5c0 2.828 0 4.243-.879 5.121C19.243 22 17.828 22 15 22h-3c-2.828 0-4.243 0-5.121-.879C6 20.243 6 18.828 6 16z" />
+                                <path
+                                    d="M6 19a3 3 0 0 1-3-3v-6c0-3.771 0-5.657 1.172-6.828S7.229 2 11 2h4a3 3 0 0 1 3 3"
+                                    opacity="0.5" />
+                            </g>
+                        </svg>
+                        Copy</button>
+                    <button
+                        class="bg-green-500  rounded-xl p-1 w-full flex justify-center items-center gap-2 text-white call-click"><svg
+                            class="w-4 h-4" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="14" viewBox="0 0 15 14">
+                            <image
+                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAOCAYAAADwikbvAAABO0lEQVR4AYSSjVHCQBCF79KA2oF0gBWIFWgJsQK0AqEDrCB0EDsAK4AOxA7oYP2+mySjY4DMvdn/t3ubq1L3RcQ8Ir4iYhcR0859VpRikudkrcABXIMNvosEpZjkF/CRc35AiiNSAolQx09FhxmhW/AOUs7Z7uoWXuk7BTvbxXgZEzKJ3nAcIPpGnjwVCXui4hHpkcSuzxrnYGfjjjmjq1fY4nCaBtspMMdPKab7mrDdG6THpdndpRUCiJ7AAhTbpFKsAhzTQAuZRL8JWuLCXQzvYCjuCl5JcvymsyXAlbyOsUlKySs50XQoTnwU+FCWqDXj7ZBHfBNwA1bA39gT1n+KSfY/L5D9FezgqLiGc4/mPvb/iglI4ALv0D+BS/LNt0yzwTa2ZYr1aDEJEvhIavSexP/vQpcUltF/AAAA//8qyjphAAAABklEQVQDABW4fxymTlodAAAAAElFTkSuQmCC"
+                                x="0" y="0" width="15" height="14" />
+                        </svg> Call</button>
                 </div>
 
             </div>
             <!-- card brac ngo-->
             <div class="card-child bg-white max-w-80 rounded-xl p-3 shadow-md">
                 <div class="flex justify-between mb-0">
-                    <img src="assets/emergency.png" class="h-8 w-8 bg-[#FFE3E2] p-1 rounded-md" alt="">
+                    <img src="assets/brac.png" class="h-8 w-8 bg-[#FFE3E2] p-1 rounded-md" alt="">
                     <button class="cursor-pointer heart-count">
-                        <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-                            <path
-                                d="M305 151.1L320 171.8L335 151.1C360 116.5 400.2 96 442.9 96C516.4 96 576 155.6 576 229.1L576 231.7C576 343.9 436.1 474.2 363.1 529.9C350.7 539.3 335.5 544 320 544C304.5 544 289.2 539.4 276.9 529.9C203.9 474.2 64 343.9 64 231.7L64 229.1C64 155.6 123.6 96 197.1 96C239.8 96 280 116.5 305 151.1z" />
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21"
+                            height="19" viewBox="0 0 21 19">
+                            <image
+                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAATCAYAAAB/TkaLAAACrUlEQVR4AZyUS2hTURCG773GBBdWIwjWgEVRi6CCL1waobgQiboISl6EoCk+6kZEURRFBDcqGFxY0abJTa4mCxWsKC5MNwpWBCsKQikFU0R3LkpM87h+c00DoekrZf7MnJk5/50zZ041pfbn9XoX+f3+SCAQGAUmGANPg8FguJaiRCKRpfhugLfgD5C8F+TsnMoRbZESXG+32z+rqvoQ5yi4bZpmEr0N3Udc9/l8HaVS6Su+i2AC3AGS30nOEMS9Uhg+RXO73TaMAQg3EDyq63qXrutnU6nUZafT2UnsPvBrmjZMfCX2YeIHwFVwjJzN+AxixynsHLaiuVyuQxgbwRWInqDrEovFimw8geMVaGPjKdbPsOsiOcViMYzjG4X1oFUNYy+GSeAuupmYOCOgj48+Qk+TbDY7iVPasZpWbZWeLsMxRqCAbipU9xMIcdO4OKvV6rBoinRJpT9YrAIqaFlsNlu7bKZF4xpf+MJiCeO0Cd2yQLaLzZOQf+dStecsJig7hG5VVEilPZl4PP5XSyaTMnP9sJ0OhUIu9IKFGT3JpnaIrcuWi1Ko8hpOk1bI7S6otzwKme9b7DeYjiG0YpFS7W+IL+DYx1evo+cl3EMb/RsguYC2Bh/7P6kYEN9D93OES8zaeexZhSe5gkIGSVoH4f5EIjGObYlVqWXxw5PrRr0EN6lY+tO0FRy5w+FwvCNvC/BB+B5dlwZSeXL5fP4g0cdU3AOxEY1GF7OuC6fYTmUfcayhUg+PIoPdIA2kEsnlcmUSfWyIQXykUCi8DofDyyXGdHShB4nJfLtpmZwKV6NMI62FTTacgTQKdpTL5REqzDAdb4h/wrc7nU5/wG4qM5FayYzIg0qlIv/BpH8eKuzmFHvAiJUww8+spLLHMIxfkHiw11J9L3pO+QcAAP//SvDHIwAAAAZJREFUAwATKCZj1fU3gQAAAABJRU5ErkJggg=="
+                                x="0" y="0" width="21" height="19" />
                         </svg>
                     </button>
                 </div>
@@ -256,25 +391,43 @@
                     <p class="font-light text-gray-400 text-[10px] mb-0">Brac</p>
                 </div>
                 <div class="mb-3">
-                    <h1 class="font-bold text-[20px] mb-0">16445</h1>
+                    <h1 class="font-bold text-[20px] mb-0 contact-number">16445</h1>
                     <p class="bg-slate-200 rounded-2xl px-3 py-1 inline-block mb-0 text-gray-500">এনজিও</p>
                 </div>
                 <div class="flex gap-4 mb-0">
-                    <button class="bg-white border-1 border-gray-300  rounded-xl p-1 w-full flex justify-center items-center gap-2 cursor-pointer copy-click">
-                        <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 11c0-2.828 0-4.243.879-5.121C7.757 5 9.172 5 12 5h3c2.828 0 4.243 0 5.121.879C21 6.757 21 8.172 21 11v5c0 2.828 0 4.243-.879 5.121C19.243 22 17.828 22 15 22h-3c-2.828 0-4.243 0-5.121-.879C6 20.243 6 18.828 6 16z"/><path d="M6 19a3 3 0 0 1-3-3v-6c0-3.771 0-5.657 1.172-6.828S7.229 2 11 2h4a3 3 0 0 1 3 3" opacity="0.5"/></g></svg>
-                     Copy</button>
-                    <button class="bg-green-500  rounded-xl p-1 w-full">Call</button>
+                    <button
+                        class="bg-white border-1 border-gray-300  rounded-xl p-1 w-full flex justify-center items-center gap-2 cursor-pointer copy-click">
+                        <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24">
+                            <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path
+                                    d="M6 11c0-2.828 0-4.243.879-5.121C7.757 5 9.172 5 12 5h3c2.828 0 4.243 0 5.121.879C21 6.757 21 8.172 21 11v5c0 2.828 0 4.243-.879 5.121C19.243 22 17.828 22 15 22h-3c-2.828 0-4.243 0-5.121-.879C6 20.243 6 18.828 6 16z" />
+                                <path
+                                    d="M6 19a3 3 0 0 1-3-3v-6c0-3.771 0-5.657 1.172-6.828S7.229 2 11 2h4a3 3 0 0 1 3 3"
+                                    opacity="0.5" />
+                            </g>
+                        </svg>
+                        Copy</button>
+                    <button class="bg-green-500  rounded-xl p-1 w-full flex justify-center items-center gap-2 text-white call-click"><svg
+                            class="w-4 h-4" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="14" viewBox="0 0 15 14">
+                            <image
+                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAOCAYAAADwikbvAAABO0lEQVR4AYSSjVHCQBCF79KA2oF0gBWIFWgJsQK0AqEDrCB0EDsAK4AOxA7oYP2+mySjY4DMvdn/t3ubq1L3RcQ8Ir4iYhcR0859VpRikudkrcABXIMNvosEpZjkF/CRc35AiiNSAolQx09FhxmhW/AOUs7Z7uoWXuk7BTvbxXgZEzKJ3nAcIPpGnjwVCXui4hHpkcSuzxrnYGfjjjmjq1fY4nCaBtspMMdPKab7mrDdG6THpdndpRUCiJ7AAhTbpFKsAhzTQAuZRL8JWuLCXQzvYCjuCl5JcvymsyXAlbyOsUlKySs50XQoTnwU+FCWqDXj7ZBHfBNwA1bA39gT1n+KSfY/L5D9FezgqLiGc4/mPvb/iglI4ALv0D+BS/LNt0yzwTa2ZYr1aDEJEvhIavSexP/vQpcUltF/AAAA//8qyjphAAAABklEQVQDABW4fxymTlodAAAAAElFTkSuQmCC"
+                                x="0" y="0" width="15" height="14" />
+                        </svg> Call</button>
                 </div>
 
             </div>
             <!-- card railway-->
             <div class="card-child bg-white max-w-80 rounded-xl p-3 shadow-md">
                 <div class="flex justify-between mb-0">
-                    <img src="assets/emergency.png" class="h-8 w-8 bg-[#FFE3E2] p-1 rounded-md" alt="">
+                    <img src="assets/Bangladesh-Railway.png" class="h-8 w-8 bg-[#FFE3E2] p-1 rounded-md" alt="">
                     <button class="cursor-pointer heart-count">
-                        <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-                            <path
-                                d="M305 151.1L320 171.8L335 151.1C360 116.5 400.2 96 442.9 96C516.4 96 576 155.6 576 229.1L576 231.7C576 343.9 436.1 474.2 363.1 529.9C350.7 539.3 335.5 544 320 544C304.5 544 289.2 539.4 276.9 529.9C203.9 474.2 64 343.9 64 231.7L64 229.1C64 155.6 123.6 96 197.1 96C239.8 96 280 116.5 305 151.1z" />
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21"
+                            height="19" viewBox="0 0 21 19">
+                            <image
+                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAATCAYAAAB/TkaLAAACrUlEQVR4AZyUS2hTURCG773GBBdWIwjWgEVRi6CCL1waobgQiboISl6EoCk+6kZEURRFBDcqGFxY0abJTa4mCxWsKC5MNwpWBCsKQikFU0R3LkpM87h+c00DoekrZf7MnJk5/50zZ041pfbn9XoX+f3+SCAQGAUmGANPg8FguJaiRCKRpfhugLfgD5C8F+TsnMoRbZESXG+32z+rqvoQ5yi4bZpmEr0N3Udc9/l8HaVS6Su+i2AC3AGS30nOEMS9Uhg+RXO73TaMAQg3EDyq63qXrutnU6nUZafT2UnsPvBrmjZMfCX2YeIHwFVwjJzN+AxixynsHLaiuVyuQxgbwRWInqDrEovFimw8geMVaGPjKdbPsOsiOcViMYzjG4X1oFUNYy+GSeAuupmYOCOgj48+Qk+TbDY7iVPasZpWbZWeLsMxRqCAbipU9xMIcdO4OKvV6rBoinRJpT9YrAIqaFlsNlu7bKZF4xpf+MJiCeO0Cd2yQLaLzZOQf+dStecsJig7hG5VVEilPZl4PP5XSyaTMnP9sJ0OhUIu9IKFGT3JpnaIrcuWi1Ko8hpOk1bI7S6otzwKme9b7DeYjiG0YpFS7W+IL+DYx1evo+cl3EMb/RsguYC2Bh/7P6kYEN9D93OES8zaeexZhSe5gkIGSVoH4f5EIjGObYlVqWXxw5PrRr0EN6lY+tO0FRy5w+FwvCNvC/BB+B5dlwZSeXL5fP4g0cdU3AOxEY1GF7OuC6fYTmUfcayhUg+PIoPdIA2kEsnlcmUSfWyIQXykUCi8DofDyyXGdHShB4nJfLtpmZwKV6NMI62FTTacgTQKdpTL5REqzDAdb4h/wrc7nU5/wG4qM5FayYzIg0qlIv/BpH8eKuzmFHvAiJUww8+spLLHMIxfkHiw11J9L3pO+QcAAP//SvDHIwAAAAZJREFUAwATKCZj1fU3gQAAAABJRU5ErkJggg=="
+                                x="0" y="0" width="21" height="19" />
                         </svg>
                     </button>
                 </div>
@@ -283,14 +436,31 @@
                     <p class="font-light text-gray-400 text-[10px] mb-0">Bangladesh Railway</p>
                 </div>
                 <div class="mb-3">
-                    <h1 class="font-bold text-[20px] mb-0">163</h1>
+                    <h1 class="font-bold text-[20px] mb-0 contact-number">163</h1>
                     <p class="bg-slate-200 rounded-2xl px-3 py-1 inline-block mb-0 text-gray-500">পরিবহন</p>
                 </div>
                 <div class="flex gap-4 mb-0">
-                    <button class="bg-white border-1 border-gray-300  rounded-xl p-1 w-full flex justify-center items-center gap-2 cursor-pointer copy-click">
-                        <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 11c0-2.828 0-4.243.879-5.121C7.757 5 9.172 5 12 5h3c2.828 0 4.243 0 5.121.879C21 6.757 21 8.172 21 11v5c0 2.828 0 4.243-.879 5.121C19.243 22 17.828 22 15 22h-3c-2.828 0-4.243 0-5.121-.879C6 20.243 6 18.828 6 16z"/><path d="M6 19a3 3 0 0 1-3-3v-6c0-3.771 0-5.657 1.172-6.828S7.229 2 11 2h4a3 3 0 0 1 3 3" opacity="0.5"/></g></svg>
-                     Copy</button>
-                    <button class="bg-green-500  rounded-xl p-1 w-full">Call</button>
+                    <button
+                        class="bg-white border-1 border-gray-300  rounded-xl p-1 w-full flex justify-center items-center gap-2 cursor-pointer copy-click">
+                        <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24">
+                            <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path
+                                    d="M6 11c0-2.828 0-4.243.879-5.121C7.757 5 9.172 5 12 5h3c2.828 0 4.243 0 5.121.879C21 6.757 21 8.172 21 11v5c0 2.828 0 4.243-.879 5.121C19.243 22 17.828 22 15 22h-3c-2.828 0-4.243 0-5.121-.879C6 20.243 6 18.828 6 16z" />
+                                <path
+                                    d="M6 19a3 3 0 0 1-3-3v-6c0-3.771 0-5.657 1.172-6.828S7.229 2 11 2h4a3 3 0 0 1 3 3"
+                                    opacity="0.5" />
+                            </g>
+                        </svg>
+                        Copy</button>
+                    <button
+                        class="bg-green-500  rounded-xl p-1 w-full flex justify-center items-center gap-2 text-white call-click"><svg
+                            class="w-4 h-4" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="14" viewBox="0 0 15 14">
+                            <image
+                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAOCAYAAADwikbvAAABO0lEQVR4AYSSjVHCQBCF79KA2oF0gBWIFWgJsQK0AqEDrCB0EDsAK4AOxA7oYP2+mySjY4DMvdn/t3ubq1L3RcQ8Ir4iYhcR0859VpRikudkrcABXIMNvosEpZjkF/CRc35AiiNSAolQx09FhxmhW/AOUs7Z7uoWXuk7BTvbxXgZEzKJ3nAcIPpGnjwVCXui4hHpkcSuzxrnYGfjjjmjq1fY4nCaBtspMMdPKab7mrDdG6THpdndpRUCiJ7AAhTbpFKsAhzTQAuZRL8JWuLCXQzvYCjuCl5JcvymsyXAlbyOsUlKySs50XQoTnwU+FCWqDXj7ZBHfBNwA1bA39gT1n+KSfY/L5D9FezgqLiGc4/mPvb/iglI4ALv0D+BS/LNt0yzwTa2ZYr1aDEJEvhIavSexP/vQpcUltF/AAAA//8qyjphAAAABklEQVQDABW4fxymTlodAAAAAElFTkSuQmCC"
+                                x="0" y="0" width="15" height="14" />
+                        </svg> Call</button>
                 </div>
 
             </div>
@@ -299,23 +469,30 @@
 
         <!-- side cart option -->
         <aside class="cart-section bg-white col-span-3 p-5 mt-5 mb-5">
-            
-                <div class="flex items-center justify-between pb-3">
-                    <div class="flex items-center gap-2">
-                        <!-- Clock SVG -->
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                            stroke="currentColor" class="w-5 h-5 text-gray-700">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M12 6v6l4 2m6-2a10 10 0 11-20 0 10 10 0 0120 0z" />
-                        </svg>
-                        <span class="text-lg font-semibold text-gray-800">Call History</span>
-                    </div>
-                    <button
-                        class="bg-green-500 text-white px-4 py-1 rounded-full text-sm">Clear</button>      
+
+            <div class="flex items-center justify-between pb-3">
+                <div class="flex items-center gap-2">
+                    <!-- Clock SVG -->
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                        stroke="currentColor" class="w-5 h-5 text-gray-700">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M12 6v6l4 2m6-2a10 10 0 11-20 0 10 10 0 0120 0z" />
+                    </svg>
+                    <span class="text-lg font-semibold text-gray-800">Call History</span>
+                </div>
+                <div>
+                    <button class="bg-green-500 text-white px-4 py-1 rounded-full text-sm"
+                        id="clearHistory">Clear</button>
+                </div>
+                
+            </div>
+            <div id="callHistory" class="mt-5"></div>
+
         </aside>
+
     </section>
 
-<script src="index.js"> </script>
+    <script src="index.js"> </script>
 
 </body>
 
