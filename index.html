@@ -11,8 +11,8 @@
 
 <body class="bg-[#F5FFF6]">
     <!-- nav section -->
-    <nav class="nav-parent mx-auto w-full p-10 flex justify-between md:flex-2">
-        <div class="left-div flex items-center gap-2 ">
+    <nav class="nav-parent mx-auto w-full p-10 flex flex-col sm:flex-row justify-between items-center gap-8">
+        <div class="left-div flex items-center gap-2">
             <div class="nav-logo">
                 <img src="./assets/logo.png" class="h-10 w-10" alt="">
             </div>
@@ -21,36 +21,37 @@
             </div>
         </div>
 
-        <div class="right-div h-8 w-70 flex justify-between">
+        <div class="right-div  flex flex-col sm:flex-row items-center gap-3 mt-3 sm:mt-0">
             <!-- hear count -->
-            <div class="flex justify-center items-center bg-green-100 px-5 rounded-full gap-1">
+            <div class="flex justify-center items-center bg-green-100 px-4 py-2 rounded-full gap-1">
                 <span class="text-sm font-medium" id="heartCount">0</span>
                 <img src="./assets/heart.png" alt="heart" class="h-4 w-4">
             </div>
 
             <!-- Coin Count -->
-            <div class="flex justify-center items-center bg-green-100 px-5 rounded-full gap-1">
+            <div class="flex justify-center items-center bg-green-100 px-4 py-2 rounded-full gap-1">
                 <span class="text-sm font-medium" id="callCoin">100</span>
                 <img src="./assets/coin.png" alt="coin" class="h-4 w-4">
             </div>
 
             <!-- Copy Text -->
-            <div class="flex justify-center items-center bg-green-500 px-5 rounded-full gap-1">
+            <div class="flex justify-center items-center bg-green-500 px-4 py-2 rounded-full gap-1">
                 <span class="text-sm font-medium " id="copyCount">2</span>
                 <span class="text-sm font-medium">Copy</span>
             </div>
         </div>
     </nav>
     <!-- banner section -->
-    <header class="bg-[linear-gradient(to_right,#013223,#006747,#013223)] text-center w-full p-10">
+    <header class="bg-[linear-gradient(to_right,#013223,#006747,#013223)] text-center md:w-full p-10">
         <img src="assets/logo-dark.png" class="mx-auto h-20 w-20 mb-4 " alt="">
         <h2 class="text-white font-bold">জরুরি সেবা ডিরেক্টরি</h2>
         <p class="text-white">Government Emergency Services at Your Fingertip – A Project by Government of the People’s
             Republic of Bangladesh</p>
     </header>
     <!-- card section -->
-    <section class="w-11/12 mx-auto py-5 grid grid-cols-12 gap-8  ">
-        <div class="card-parent col-span-9 grid grid-cols-3 gap-4 p-5">
+    <!-- card section -->
+    <section class="w-11/12 mx-auto py-5 grid grid-cols-12 gap-8 ">
+        <div class="card-parent col-span-9 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 flex-1 p-5">
             <!-- card emergency -->
             <div class="card-child bg-white max-w-80 rounded-xl p-3 shadow-md">
                 <div class="flex justify-between mb-0">
@@ -72,7 +73,7 @@
                     <h1 class="font-bold text-[20px] mb-0 contact-number">999</h1>
                     <p class="bg-slate-200 rounded-2xl px-3 py-1 inline-block mb-0 text-gray-500">সার্বজনীন</p>
                 </div>
-                <div class="flex gap-4 mb-0">
+                <div class="flex flex-col md:flex-row gap-4 mb-0">
                     <button
                         class="bg-white border-1 border-gray-300  rounded-xl p-1 w-full flex justify-center items-center gap-2 cursor-pointer copy-click">
                         <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -118,7 +119,7 @@
                     <h1 class="font-bold text-[20px] mb-0 contact-number">999</h1>
                     <p class="bg-slate-200 rounded-2xl px-3 py-1 inline-block mb-0 text-gray-500">পুলিশ</p>
                 </div>
-                <div class="flex gap-4 mb-0">
+                <div class="flex flex-col md:flex-row gap-4 mb-0">
                     <button
                         class="bg-white border-1 border-gray-300  rounded-xl p-1 w-full flex justify-center items-center gap-2 cursor-pointer copy-click">
                         <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -164,7 +165,7 @@
                     <h1 class="font-bold text-[20px] mb-0 contact-number">999</h1>
                     <p class="bg-slate-200 rounded-2xl px-3 py-1 inline-block mb-0 text-gray-500">ফায়ার</p>
                 </div>
-                <div class="flex gap-4 mb-0">
+                <div class="flex flex-col md:flex-row gap-4 mb-0">
                     <button
                         class="bg-white border-1 border-gray-300  rounded-xl p-1 w-full flex justify-center items-center gap-2 cursor-pointer copy-click">
                         <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -210,7 +211,7 @@
                     <h1 class="font-bold text-[20px] mb-0 contact-number">1994-999999</h1>
                     <p class="bg-slate-200 rounded-2xl px-3 py-1 inline-block mb-0 text-gray-500">স্বাস্থ্য</p>
                 </div>
-                <div class="flex gap-4 mb-0">
+                <div class="flex flex-col md:flex-row gap-4 mb-0">
                     <button
                         class="bg-white border-1 border-gray-300  rounded-xl p-1 w-full flex justify-center items-center gap-2 cursor-pointer copy-click">
                         <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -256,7 +257,7 @@
                     <h1 class="font-bold text-[20px] mb-0 contact-number">109</h1>
                     <p class="bg-slate-200 rounded-2xl px-3 py-1 inline-block mb-0 text-gray-500">সহায়তা</p>
                 </div>
-                <div class="flex gap-4 mb-0">
+                <div class="flex flex-col md:flex-row gap-4 mb-0">
                     <button
                         class="bg-white border-1 border-gray-300  rounded-xl p-1 w-full flex justify-center items-center gap-2 cursor-pointer copy-click">
                         <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -302,7 +303,7 @@
                     <h1 class="font-bold text-[20px] mb-0 contact-number">106</h1>
                     <p class="bg-slate-200 rounded-2xl px-3 py-1 inline-block mb-0 text-gray-500">সরকারি</p>
                 </div>
-                <div class="flex gap-4 mb-0">
+                <div class="flex flex-col md:flex-row gap-4 mb-0">
                     <button
                         class="bg-white border-1 border-gray-300  rounded-xl p-1 w-full flex justify-center items-center gap-2 cursor-pointer copy-click">
                         <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -348,7 +349,7 @@
                     <h1 class="font-bold text-[20px] mb-0 contact-number">16216</h1>
                     <p class="bg-slate-200 rounded-2xl px-3 py-1 inline-block mb-0 text-gray-500">বিদ্যুৎ</p>
                 </div>
-                <div class="flex gap-4 mb-0">
+                <div class="flex flex-col md:flex-row gap-4 mb-0">
                     <button
                         class="bg-white border-1 border-gray-300  rounded-xl p-1 w-full flex justify-center items-center gap-2 cursor-pointer copy-click">
                         <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -394,7 +395,7 @@
                     <h1 class="font-bold text-[20px] mb-0 contact-number">16445</h1>
                     <p class="bg-slate-200 rounded-2xl px-3 py-1 inline-block mb-0 text-gray-500">এনজিও</p>
                 </div>
-                <div class="flex gap-4 mb-0">
+                <div class="flex flex-col md:flex-row gap-4 mb-0">
                     <button
                         class="bg-white border-1 border-gray-300  rounded-xl p-1 w-full flex justify-center items-center gap-2 cursor-pointer copy-click">
                         <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -439,7 +440,7 @@
                     <h1 class="font-bold text-[20px] mb-0 contact-number">163</h1>
                     <p class="bg-slate-200 rounded-2xl px-3 py-1 inline-block mb-0 text-gray-500">পরিবহন</p>
                 </div>
-                <div class="flex gap-4 mb-0">
+                <div class="flex flex-col md:flex-row gap-4 mb-0">
                     <button
                         class="bg-white border-1 border-gray-300  rounded-xl p-1 w-full flex justify-center items-center gap-2 cursor-pointer copy-click">
                         <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -468,10 +469,10 @@
         </div>
 
         <!-- side cart option -->
-        <aside class="cart-section bg-white col-span-3 p-5 mt-5 mb-5">
+        <aside class="cart-section bg-white w-full flex-shrink-0  col-span-9 lg:col-span-3 p-5 mt-5 mb-5 ">
 
-            <div class="flex items-center justify-between pb-3">
-                <div class="flex items-center gap-2">
+            <div class="flex flex-row  sm:flex-row items-center justify-between gap-3 pb-2">
+                <div class="flex  items-center gap-2">
                     <!-- Clock SVG -->
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                         stroke="currentColor" class="w-5 h-5 text-gray-700">
@@ -484,7 +485,7 @@
                     <button class="bg-green-500 text-white px-4 py-1 rounded-full text-sm"
                         id="clearHistory">Clear</button>
                 </div>
-                
+
             </div>
             <div id="callHistory" class="mt-5"></div>
 
